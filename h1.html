@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I'm sorry, Kashish</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#2a0f2e;--bg2:#5b1a4a;--rose:#ff8fab;--peach:#ffc2a8;--lilac:#c9a7ff;--ink:#fff4f6;--soft:rgba(255,244,246,.74);--glass:rgba(255,255,255,.10);--edge:rgba(255,255,255,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root:not([data-theme="light"]){color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2) 60%,#7a2552);background-attachment:fixed;line-height:1.8;overflow-x:hidden;min-height:100%}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:.55;z-index:0;animation:float 18s ease-in-out infinite}
+.b1{width:360px;height:360px;background:var(--rose);top:-80px;left:-80px}
+.b2{width:320px;height:320px;background:var(--lilac);bottom:5%;right:-90px;animation-delay:-6s}
+.b3{width:260px;height:260px;background:var(--peach);top:45%;left:30%;opacity:.3;animation-delay:-11s}
+@keyframes float{50%{transform:translate(40px,-50px) scale(1.12)}}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.h{position:absolute;bottom:-30px;opacity:0;animation:rise linear forwards}
+@keyframes rise{10%{opacity:.7}100%{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+main{position:relative;z-index:2}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 22px}
+.glass{background:var(--glass);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border:1px solid var(--edge);border-radius:28px;box-shadow:0 20px 60px rgba(20,0,20,.35),inset 0 1px 0 rgba(255,255,255,.35);padding:clamp(28px,6vw,56px);max-width:640px;width:100%}
+h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1}
+h1{font-size:clamp(2.8rem,10vw,5.2rem);background:linear-gradient(90deg,var(--peach),var(--rose),var(--lilac));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.9rem,6vw,2.8rem);margin-bottom:18px}
+p{color:var(--soft);font-size:1.05rem;margin-bottom:14px;max-width:62ch}
+em{font-family:'Cormorant Garamond',serif;font-size:1.25em;color:var(--peach)}
+.hero{text-align:center}
+.hero p{margin:18px auto 28px}
+.hint{display:inline-block;animation:bob 2s ease-in-out infinite;font-size:1.6rem}
+@keyframes bob{50%{transform:translateY(10px)}}
+.reveal{opacity:0;transform:translateY(40px);transition:all 1.1s cubic-bezier(.2,.7,.2,1)}
+.reveal.on{opacity:1;transform:none}
+.promises{display:grid;gap:14px;margin-top:10px}
+.pr{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid var(--edge)}
+.pr span{font-size:1.4rem}
+.pr p{margin:0}
+.pr:nth-child(2){transition-delay:.15s}.pr:nth-child(3){transition-delay:.3s}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+button{font:inherit;font-weight:500;color:var(--ink);cursor:pointer;padding:14px 26px;border-radius:999px;border:1px solid var(--edge);background:linear-gradient(135deg,rgba(255,143,171,.6),rgba(201,167,255,.45));backdrop-filter:blur(10px);transition:transform .25s,box-shadow .25s}
+button:hover,button:focus-visible{transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,143,171,.45);outline:2px solid var(--peach);outline-offset:3px}
+#yes{text-align:center}
+.sign{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.8rem;color:var(--peach);margin-top:20px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--peach),var(--rose),var(--lilac));z-index:9}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg1:#2a0f2e}}
+@media (prefers-reduced-motion:reduce){.blob,.hint,.h{animation:none}.reveal{transition:none;opacity:1;transform:none;filter:none}}
+.shayari{font-family:'Tiro Devanagari Hindi',Georgia,serif;font-size:clamp(1.15rem,4.5vw,1.6rem);line-height:2.1;text-align:center}.shayari span{display:block}.shayari .gap{margin-top:22px}.pr:nth-child(4){transition-delay:.45s}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div id="hearts" aria-hidden="true"></div>
+<main>
+<section class="hero">
+  <div class="glass reveal on">
+    <h1>I'm sorry, Kashish</h1>
+    <p>Kashish, I made this just for you, because some things are too important to say in a hurry. Scroll slowly. Every word is true.</p>
+    <span class="hint">&#8595;</span>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal">
+    <h2>I wasn't there for you</h2>
+    <p>You needed me, and I wasn't providing the care, the time or the attention you deserve. I let ordinary things get in front of the person who matters most.</p>
+    <p>I know it left you feeling alone, even when I was right there.</p>
+    <p>Kashish, you never asked for much. You only wanted me to notice, to call, to check on you, to choose you. And I failed even at that.</p>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal">
+    <h2>I didn't make you feel better</h2>
+    <p>When you were hurting, I should have held you closer, listened longer and said less. Instead, I missed the moments where you only needed me to care out loud.</p>
+    <p>Your feelings were never too much. <em>I was too little.</em></p>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal">
+    <h2>Things I'm truly sorry for</h2>
+    <div class="promises">
+      <div class="pr reveal"><span>&#128222;</span><p>For the times I was busy or distracted when you needed to talk.</p></div>
+      <div class="pr reveal"><span>&#129730;</span><p>For not asking "are you okay?" and not hearing it when you said "I'm fine".</p></div>
+      <div class="pr reveal"><span>&#128148;</span><p>For letting you carry your worries alone, when I should have carried them with you.</p></div>
+      <div class="pr reveal"><span>&#127775;</span><p>For not making you feel special, because you are, every single day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal">
+    <h2>Kashish, this one is for you</h2>
+    <div class="shayari">
+      <span>तू मेरी कशिश है, फिर भी दूर रहा मैं,</span>
+      <span>तेरे हर आँसू का क़सूरवार रहा मैं।</span>
+      <span>अब न कोई शिकवा, न कोई बहाना होगा,</span>
+      <span>बस तेरी हँसी ही मेरा ठिकाना होगा।</span>
+      <span class="gap">माफ़ कर दे मुझे, ऐ मेरी जान-ए-जिगर,</span>
+      <span>तेरे बिना हर ख़ुशी लगती है बेअसर।</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal">
+    <h2>What I promise you</h2>
+    <div class="promises">
+      <div class="pr reveal"><span>&#128149;</span><p>To show up for you, in the small days as much as the big ones.</p></div>
+      <div class="pr reveal"><span>&#127769;</span><p>To listen first, and to make you feel safe telling me anything.</p></div>
+      <div class="pr reveal"><span>&#127800;</span><p>To make you feel loved every day, without you ever having to ask.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="glass reveal" id="yes">
+    <h2>Will you forgive me, Kashish?</h2>
+    <p style="margin-inline:auto" id="msg">You are my favourite person in the whole world, and I want to earn back every bit of your trust.</p>
+    <div class="btnrow" style="justify-content:center">
+      <button id="y">Yes, I forgive you &#128150;</button>
+      <button id="t">I need a hug first &#129730;</button>
+    </div>
+    <div class="sign">Forever yours, with all my heart.</div>
+  </div>
+</section>
+</main>
+<script>
+const els=document.querySelectorAll('.reveal');
+try{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on')}}),{threshold:.1});els.forEach(el=>io.observe(el));}catch(e){els.forEach(el=>el.classList.add('on'))}
+setTimeout(()=>document.querySelector('.reveal').classList.add('on'),300);
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{const m=document.documentElement.scrollHeight-innerHeight;bar.style.width=(m>0?scrollY/m*100:0)+'%'},{passive:true});
+const box=document.getElementById('hearts');
+function heart(n){for(let i=0;i<n;i++){const h=document.createElement('div');h.className='h';h.textContent=['\u2764','\u{1F495}','\u{1F338}','\u2728'][Math.random()*4|0];h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*22)+'px';h.style.animationDuration=(7+Math.random()*7)+'s';box.appendChild(h);setTimeout(()=>h.remove(),15000)}}
+heart(6);setInterval(()=>heart(1),1400);
+document.getElementById('y').onclick=()=>{heart(40);document.getElementById('msg').textContent='Thank you, Kashish. You just made me the happiest person alive. I promise to be better, starting right now.'};
+document.getElementById('t').onclick=()=>{heart(20);document.getElementById('msg').textContent='Come here, Kashish. I am holding you tight, and I am not letting go until you feel better.'};
+</script>
+</body>
+</html>
